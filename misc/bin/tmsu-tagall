@@ -5,4 +5,4 @@ Recursively tag all files under the current directory
 
 Usage: $(basename $0) TAG..."
 
-find . -type f -print0 | xargs -i0 tmsu tag --tags "$1" {}
+find . -type f -print0 | xargs -0 -i tmsu tag --tags "$1" {}
